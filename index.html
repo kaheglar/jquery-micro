@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery.micro Test Page</title>
+    </head>
+    <body>
+        <h1>jQuery.micro Test Page</h1>
+        
+        <div id="main"></div>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js">
+        </script>
+        <script src="jquery.micro.js">
+        </script>
+        <script>
+            var render = $.micro("<h2><%=data.title%></h2>");
+            $("#main").html(render({ title: "Template Loaded..." }));
+        </script>
+    </body>
+</html>
